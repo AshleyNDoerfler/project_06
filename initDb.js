@@ -12,7 +12,7 @@ const { User, UserClientFields } = require('./models/user')
 const businessData = require('./data/businesses.json')
 const photoData = require('./data/photos.json')
 const reviewData = require('./data/reviews.json')
-const userData = require('./data/user.json')
+const userData = require('./data/users.json')
 
 sequelize.sync().then(async function () {
   await Business.bulkCreate(businessData, { fields: BusinessClientFields })
